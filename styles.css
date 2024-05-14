@@ -1,0 +1,47 @@
+.contenedor {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(9, 300px);
+    gap: 5px;
+}
+.uno {
+    background-color: tomato;
+}
+.dos {
+    background-color: yellow;
+}
+.tres {
+    background-color: yellowgreen;
+}
+.cuatro {
+    background-color: blueviolet;
+}
+.cinco {
+    background-color: wheat;
+}
+.seis { 
+    background-color: cadetblue;
+}
+.siete {
+    background-color: springgreen;
+}
+.ocho {
+    background-color: violet;
+}
+.nueve {
+    background-color: thistle;
+}
+@media only screen and (min-width: 321px) and (max-width: 768px){
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+}
+@media only screen and (min-width: 769px){
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+}
+}
